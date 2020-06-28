@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>매미팬클럽
+        
+    </title>
+
+<style>
+    *{
+        margin: 0px; 
+        padding: 0px;
+    }
+    
+    #container {
+            width: 960px;
+			margin:0px auto;
+		}
+        #header {
+            padding-top: 60px;
+			padding-bottom: 17px;
+			margin-bottom:20px;  
+			border-bottom: #ccc solid 1px;		
+            text-align: center;	
+		}
+
+		#title a{
+			font-size: 20px;
+            float: left;
+            list-style-type: none;
+            text-decoration: none;
+            color: black;
+
+        }
+        
+        #main_menu {
+            font-size: 12px;
+            color: purple;
+            padding: 12px;
+            text-align: center;
+            display: inline;
+			clear: both;	
+
+        }
+
+        #main_menu li {
+            padding: 0 20px 0 20px;
+			list-style-type: none;
+			display: inline;
+            text-decoration: none;
+            transition: 1s;
+        }
+        #main_menu li:hover {
+            background-color: thistle;
+            padding:8px;
+            border-radius:10px;
+            font-weight: bold;
+        }
+        
+        
+        #main_menu a{
+            text-decoration: none;
+        }
+        #main_menu a:active{
+         color:white;   
+        }
+        #profile_bar01{
+            margin-bottom: 10px;
+
+        }
+        #footer{
+            height: 200px;
+            border-top:1px solid #ccc ;
+        }
+/*  메인 헤더, 하단바 메뉴*/
+li{margin:5px; list-style-type: none;}
+        #men_form{
+            font-weight: bold;
+            margin:0px;
+            font-size:12px;
+            color:blueviolet;
+            padding-top:5px;
+            padding-bottom:10px;
+            border-top:solid 1px #cccccc;
+           
+        }
+
+        input[type=text] {
+            border: solid 1px plum;
+            border-radius:5px;
+            margin-bottom: 7px;
+        }
+        input[type=text]:focus {
+        background-color: pink;
+        border:1px solid plum;
+        }
+        input[type=submit]:hover {
+            background-color: powderblue;
+         
+        }
+        select {
+            width:100px;
+            padding:3px;
+            background-color: #f6e7fa;
+            margin-bottom: 7px;
+        }
+        .button_01{
+            width: 20px;
+            display: inline-block;
+        }
+
+
+
+        </style>
+</head>
+
+<body>
+    <body>
+        <div id="container">
+            <header id="header">
+                <h1 id="title"><a href="20203730.html">Maemi Studio<img src="image/logo.jpg" style="margin-left: 2px;" alt=""></a></h1>
+                <ul id="main_menu">
+                    <li><a href="20203730_01.html">매미소개</a></li>
+                    <li><a href="20203730_02.html">매미일상</a></li>
+                    <li><a href="#">매미사진첩</a></li>
+                    <li><a href="#">Q&A</a></li>
+                    <li><a href="20203730_05.html">매미팬가입</a></li>
+                </ul>
+            </header>
+    
+
+    
+            <main>
+                <img id="profile_bar01" src="image/profile_bar02.jpg" alt="">
+                
+    
+            </main>
+    
+       
+                    
+
+
+                    <form action="/aaa/search.php" method="get">
+                      
+                       
+                        
+                        <ul id="men_form">
+                            <li><label>아이디 : </label><input type="text" id="user_id" size="10" 
+                
+                                minlength="4" maxlength="12" required autofocus></li>   
+                             <li><label>비밀번호 : <input type="password" placeholder="비밀번호 입력" required></label></li>
+                            <li><label>취미 : </label>
+                                <input type="checkbox" name="hobby1" value="book">독서
+                                <input type="checkbox" name="hobby2" value="health" checked>운동
+                                <input type="checkbox" name="hobby3" value="cook">요리  
+                            </li>
+                            <li>성별 : 
+                                <input type="radio" id="male" name="gender1" value="male" checked><label for="male">남</label>
+                                <input type="radio" name="gender1" value="female">여
+                            </li>
+                            <li>프로필 사진 : <input type="file"></li>
+                            <li>이메일 : <input type="text"> @
+                                <select>
+                                    <option>선택</option>
+                                    <option>daum.net</option>
+                                    <option>naver.com</option>
+                                    <option>직접입력</option>
+                                </select>
+                            </li>
+                            <li>자기소개 : <textarea name="" id="my" rows="5" cols="40"></textarea></li>
+                            <li><input type="hidden" id="coutury" name="contury" value="korea"></li>
+                            <li class="button_01"><input type="submit" value="전송"></li>
+                            <li class="button_01"><input type="reset" value="초기화"></li>
+                        </ul>
+                  
+                    </form>
+  
+                    
+<!--footer 바-->  
+    
+            <footer>
+                <div id="footer">
+                    <img src="image/footer.jpg" alt="">
+    
+                </div>
+    
+            </footer>
+    
+            
+    
+    
+    
+        </div>
+    
+    
+
+
+
+
+</body>
+</html>
